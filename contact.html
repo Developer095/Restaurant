@@ -27,14 +27,31 @@
         </div>
     </section>
 
-    <section id="Banner">
-        <div id="WelcomeImage">
-            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Welcome pic">
-            <h1>Welcome <br> to <br>Gourmet Delight</h1>
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="submit_contact.php" method="post"> <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="contact-info">
+            <h3>Gourmet Delights Restaurant</h3>
+            <p>123 Main Street, Lahore, Pakistan</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@gourmetdelights.com</p>
         </div>
     </section>
-
 
     <footer>
         <p>&copy; 2023 Gourmet Delights Restaurant. All rights reserved.</p>
