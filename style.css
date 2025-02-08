@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+}
+
+#Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+#logo img {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  width: 80px;
+}
+
+#Nav-options {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  gap: 20px;
+}
+
+#Nav-options li:hover {
+  cursor: pointer;
+  background-color: black;
+  color: aqua;
+  border-radius: 4px;
+}
+
+#Banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#WelcomeImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+#WelcomeImage h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#history {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+#history img {
+  width: 80rem;
+}
+
+#history p {
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#aboutUS {
+  display: flex-row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutUS button {
+  position: absolute;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  left: 50%;
+  background-color: black;
+  color: bisque;
+  font-weight: bold;
+}
+
+#AboutBtn:hover {
+  cursor: pointer;
+  background-color: bisque;
+  color: black;
+  transform: scale(1.2);
+}
